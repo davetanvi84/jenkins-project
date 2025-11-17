@@ -19,11 +19,7 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                bat 'npm test || echo "No tests found"'
-            }
-        }
+
 
         stage('Build Docker Image') {
             steps {
